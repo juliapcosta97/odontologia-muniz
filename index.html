@@ -660,6 +660,244 @@
     border-radius: 2px;
     z-index: 999;
   }
+
+  /* ── HAMBURGER ── */
+  .nav-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px;
+    background: none;
+    border: none;
+  }
+  .nav-hamburger span {
+    display: block;
+    width: 24px; height: 2px;
+    background: var(--vinho);
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* ── MOBILE MENU ── */
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 65px; left: 0; right: 0;
+    background: rgba(255,252,250,0.98);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--light-line);
+    padding: 24px 28px 32px;
+    z-index: 99;
+    flex-direction: column;
+    gap: 0;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: all 0.25s ease;
+  }
+  .mobile-menu.open {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .mobile-menu a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    color: var(--charcoal);
+    padding: 14px 0;
+    border-bottom: 1px solid var(--light-line);
+    letter-spacing: 0.04em;
+  }
+  .mobile-menu a:last-child { border-bottom: none; }
+  .mobile-menu .mobile-cta {
+    margin-top: 20px;
+    background: var(--vinho);
+    color: white !important;
+    text-align: center;
+    padding: 16px !important;
+    border-radius: 2px;
+    border-bottom: none !important;
+    font-size: 0.85rem !important;
+    letter-spacing: 0.1em !important;
+    text-transform: uppercase;
+  }
+
+  /* ── WHATSAPP FLOATING BTN ── */
+  .whatsapp-float {
+    display: none;
+    position: fixed;
+    bottom: 24px; right: 20px;
+    background: #25D366;
+    color: white;
+    width: 54px; height: 54px;
+    border-radius: 50%;
+    align-items: center; justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    z-index: 998;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  }
+
+  /* ════════════════════════════════
+     TABLET  ≤ 1024px
+  ════════════════════════════════ */
+  @media (max-width: 1024px) {
+    nav { padding: 16px 28px; }
+    nav ul { gap: 20px; }
+    section { padding: 80px 40px; }
+    .hero-left { padding: 80px 40px; }
+    .hero-right { padding: 40px; }
+    .sobre { gap: 48px; padding: 80px 40px; }
+    .servicos-list { grid-template-columns: repeat(2, 1fr); }
+    .footer-top { gap: 36px; }
+    footer { padding: 60px 40px 36px; }
+    .agendamento { padding: 80px 40px; }
+  }
+
+  /* ════════════════════════════════
+     MOBILE  ≤ 768px
+  ════════════════════════════════ */
+  @media (max-width: 768px) {
+
+    /* NAV */
+    nav { padding: 14px 20px; }
+    nav ul { display: none; }
+    .nav-hamburger { display: flex; }
+    .proto-label { display: none; }
+    .whatsapp-float { display: flex; }
+
+    /* HERO */
+    .hero {
+      grid-template-columns: 1fr;
+      min-height: auto;
+      padding-top: 65px !important;
+    }
+    .hero-left {
+      padding: 52px 24px 52px;
+      min-height: 70vh;
+      justify-content: center;
+    }
+    .hero-left h1 { font-size: clamp(2.6rem, 10vw, 3.4rem); }
+    .hero-left p { font-size: 0.9rem; max-width: 100%; }
+    .scroll-hint { display: none; }
+
+    .hero-right {
+      padding: 32px 20px;
+      min-height: 300px;
+    }
+    .hero-placeholder {
+      position: relative;
+      top: auto; left: auto;
+      transform: none;
+      width: 100%;
+      height: 200px;
+      margin-bottom: 20px;
+    }
+    .hero-stats {
+      margin-top: 0;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .stat { padding: 18px 10px; }
+    .stat strong { font-size: 1.8rem; }
+    .stat span { font-size: 0.65rem; }
+
+    /* SECTIONS */
+    section { padding: 60px 20px; }
+
+    /* SOBRE */
+    .sobre {
+      grid-template-columns: 1fr;
+      gap: 0;
+      padding: 60px 20px;
+    }
+    .sobre-visual {
+      height: 280px;
+      margin-bottom: 48px;
+    }
+    .sobre-badge { right: 0; }
+    .sobre-content { padding-right: 0; }
+    .valores-grid { grid-template-columns: 1fr; gap: 10px; }
+
+    /* DIFERENCIAIS */
+    .diferenciais { padding: 60px 20px; }
+    .cards-grid { grid-template-columns: 1fr; }
+    .tea-highlight {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 28px 24px;
+    }
+    .tea-badge { width: fit-content; }
+
+    /* SERVIÇOS */
+    .servicos { padding: 60px 20px; }
+    .servicos-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .servicos-header .section-sub { text-align: left !important; max-width: 100% !important; }
+    .servicos-list { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .servico-card { padding: 24px 18px; }
+    .servico-num { font-size: 2rem; margin-bottom: 12px; }
+
+    /* PROFISSIONAL */
+    .profissional {
+      grid-template-columns: 1fr;
+      gap: 36px;
+      padding: 60px 20px;
+    }
+    .prof-photo {
+      max-width: 100%;
+      height: 300px;
+    }
+    .prof-info h2 { font-size: 2.2rem; }
+
+    /* UNIDADES */
+    .unidades { padding: 60px 20px; }
+    .unidades-grid {
+      grid-template-columns: 1fr;
+      gap: 2px;
+    }
+    .unidade-card { padding: 28px 24px; }
+
+    /* AGENDAMENTO */
+    .agendamento { padding: 60px 20px; }
+    .cta-group {
+      flex-direction: column;
+      align-items: center;
+    }
+    .btn-white, .btn-outline-white {
+      width: 100%;
+      justify-content: center;
+      padding: 16px 24px;
+    }
+
+    /* FOOTER */
+    footer { padding: 48px 20px 32px; }
+    .footer-top {
+      grid-template-columns: 1fr;
+      gap: 36px;
+    }
+    .footer-brand p { max-width: 100%; }
+    .footer-bottom {
+      flex-direction: column;
+      gap: 8px;
+      text-align: center;
+    }
+  }
+
+  /* ════════════════════════════════
+     SMALL MOBILE  ≤ 400px
+  ════════════════════════════════ */
+  @media (max-width: 400px) {
+    .servicos-list { grid-template-columns: 1fr; }
+    .hero-stats { grid-template-columns: repeat(3,1fr); }
+    .stat span { font-size: 0.6rem; }
+    .hero-left h1 { font-size: 2.4rem; }
+  }
 </style>
 </head>
 <body>
@@ -674,7 +912,22 @@
     <li><a href="#unidades">Unidades</a></li>
     <li><a href="#agendamento" class="nav-cta">Agendar Consulta</a></li>
   </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#sobre" class="mobile-link">Sobre</a>
+  <a href="#servicos" class="mobile-link">Serviços</a>
+  <a href="#profissional" class="mobile-link">Equipe</a>
+  <a href="#unidades" class="mobile-link">Unidades</a>
+  <a href="#agendamento" class="mobile-cta mobile-link">Agendar Consulta</a>
+</div>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5511965018274" class="whatsapp-float" title="WhatsApp" target="_blank">📱</a>
 
 <!-- HERO -->
 <section class="hero" style="position:relative; padding-top:0; padding-left:0; padding-right:0;">
@@ -961,7 +1214,7 @@
       <h4>Contato</h4>
       <ul>
         <li><a href="tel:11965018274">(11) 96501-8274</a></li>
-        <li><a href="mailto:OdontoMuniiz@outlook.com">OdontoMuniiz@<br>outlook.com</a></li>
+        <li><a href="/cdn-cgi/l/email-protection#9fd0fbf0f1ebf0d2eaf1f6f6e5dff0eaebf3f0f0f4b1fcf0f2">OdontoMuniiz@<br>outlook.com</a></li>
         <li><a href="#">3 unidades em SP</a></li>
       </ul>
     </div>
@@ -974,5 +1227,22 @@
 
 <div class="proto-label">Protótipo Visual</div>
 
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+  });
+
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+    });
+  });
+</script>
 </body>
 </html>
