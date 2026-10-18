@@ -3,7 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Odontologia Muniz</title>
+
+<!-- ═══════════ SEO ═══════════ -->
+<title>Odontologia Muniz | Dentista em São Paulo · Agende sua Consulta</title>
+<meta name="description" content="Clínica odontológica em São Paulo com atendimento humanizado para toda a família e atenção especial a pacientes com TEA. 3 unidades: Sol Nascente, Vila Clarice e Alto da Lapa. Agende sua consulta pelo WhatsApp.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.odontologiamuniz.com.br/">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+
+<!-- Open Graph / redes sociais -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Odontologia Muniz">
+<meta property="og:title" content="Odontologia Muniz | Dentista em São Paulo">
+<meta property="og:description" content="Atendimento odontológico humanizado para toda a família em São Paulo. Agende sua consulta.">
+<meta property="og:image" content="img/dra_manuella.jpeg">
+<meta property="og:url" content="https://www.odontologiamuniz.com.br/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Odontologia Muniz | Dentista em São Paulo">
+<meta name="twitter:description" content="Atendimento odontológico humanizado para toda a família em São Paulo. Agende sua consulta.">
+<meta name="twitter:image" content="img/dra_manuella.jpeg">
+
+<!-- Dados estruturados: clínica odontológica + unidades -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Odontologia Muniz",
+  "image": "https://www.odontologiamuniz.com.br/img/dra_manuella.jpeg",
+  "url": "https://www.odontologiamuniz.com.br/",
+  "telephone": "+5511965018274",
+  "priceRange": "$$",
+  "areaServed": "São Paulo, SP",
+  "department": [
+    {
+      "@type": "Dentist",
+      "name": "Odontologia Muniz - Sol Nascente",
+      "address": { "@type": "PostalAddress", "streetAddress": "Estrada de Ligação, 129", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR" }
+    },
+    {
+      "@type": "Dentist",
+      "name": "Odontologia Muniz - Vila Clarice",
+      "address": { "@type": "PostalAddress", "streetAddress": "Av. Agenor Couto de Magalhães, 1602", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR" }
+    },
+    {
+      "@type": "Dentist",
+      "name": "Odontologia Muniz - Alto da Lapa",
+      "address": { "@type": "PostalAddress", "streetAddress": "Av. Diógenes Ribeiro de Lima, 3187", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR" }
+    }
+  ]
+}
+</script>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     RASTREAMENTO / TRÁFEGO PAGO
+     As tags (GA4, Google Ads, Meta Pixel, GTM) NÃO carregam aqui.
+     Elas são injetadas pelo JavaScript no final da página SOMENTE
+     após o visitante aceitar os cookies (conformidade com a LGPD).
+     Para ativá-las, preencha os IDs em "TRACKING_IDS", no <script>
+     ao final do <body>.
+     ═══════════════════════════════════════════════════════════════ -->
+<script>
+  // Fallbacks: garantem que os eventos de conversão enfileirem sem erro
+  // antes do consentimento. Após o aceite, as tags reais assumem.
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
+  window.fbq  = window.fbq  || function(){ (window.fbq.q = window.fbq.q || []).push(arguments); };
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -183,6 +255,7 @@
   }
   .hero-placeholder svg { width: 40px; height: 40px; opacity: 0.4; }
   .hero-placeholder p { font-size: 0.75rem; color: var(--mid); opacity: 0.7; }
+  .hero-placeholder img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
 
   .hero-stats {
     position: relative; z-index: 2;
@@ -265,6 +338,8 @@
     font-size: 0.75rem;
   }
   .img-block svg { width: 28px; height: 28px; opacity: 0.3; margin-bottom: 6px; }
+  .img-block img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
+  .img2 img { border-radius: 2px; }
   .img-block-inner { display: flex; flex-direction: column; align-items: center; gap: 4px; }
   .img1 { width: 65%; height: 70%; top: 0; left: 0; background: #e8d5d8; }
   .img2 { width: 55%; height: 55%; bottom: 0; right: 0; background: #dcc8cc; border: 4px solid var(--warm-white); }
@@ -448,6 +523,7 @@
     font-size: 0.8rem;
   }
   .prof-photo svg { width: 48px; height: 48px; opacity: 0.25; }
+  .prof-photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
   .prof-info h2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 2.8rem;
@@ -491,6 +567,14 @@
     background: white;
     padding: 40px 36px;
   }
+  .unidade-photo {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    display: block;
+  }
   .unidade-num {
     font-family: 'Cormorant Garamond', serif;
     font-size: 4rem;
@@ -523,6 +607,150 @@
     display: inline-flex; align-items: center; gap: 6px;
   }
   .unidade-link:hover { color: var(--vinho); }
+  .unidade-actions { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
+  .unidade-gallery-btn {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--vinho);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: inline-flex; align-items: center; gap: 6px;
+    transition: color 0.2s;
+    font-family: inherit;
+  }
+  .unidade-gallery-btn:hover { color: var(--rose); }
+  .unidade-photo { cursor: pointer; transition: filter 0.2s; }
+  .unidade-photo:hover { filter: brightness(0.92); }
+
+  /* ── GALLERY MODAL ── */
+  .gallery-modal {
+    position: fixed; inset: 0;
+    z-index: 1000;
+    background: rgba(42,30,34,0.88);
+    backdrop-filter: blur(6px);
+    display: none;
+    align-items: center; justify-content: center;
+    padding: 40px 20px;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+  .gallery-modal.open { display: flex; opacity: 1; }
+  .gallery-box {
+    background: var(--warm-white);
+    border-radius: 6px;
+    width: 100%;
+    max-width: 920px;
+    max-height: 90vh;
+    display: flex; flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.4);
+    transform: translateY(16px) scale(0.98);
+    transition: transform 0.25s ease;
+  }
+  .gallery-modal.open .gallery-box { transform: translateY(0) scale(1); }
+  .gallery-head {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 24px 32px;
+    border-bottom: 1px solid var(--light-line);
+    flex-shrink: 0;
+  }
+  .gallery-head h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--vinho-deep);
+  }
+  .gallery-head h3 span {
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--rose);
+    margin-top: 4px;
+  }
+  .gallery-close {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    border: 1px solid var(--light-line);
+    background: white;
+    color: var(--vinho);
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s;
+    flex-shrink: 0;
+  }
+  .gallery-close:hover { background: var(--vinho); color: white; border-color: var(--vinho); }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 24px 32px 32px;
+    overflow-y: auto;
+  }
+  .gallery-grid img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .gallery-grid img:hover { transform: scale(1.015); }
+
+  /* ── LIGHTBOX (single image) ── */
+  .lightbox {
+    position: fixed; inset: 0;
+    z-index: 1100;
+    background: rgba(20,10,14,0.95);
+    display: none;
+    align-items: center; justify-content: center;
+    padding: 40px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox.open { display: flex; opacity: 1; }
+  .lightbox img {
+    max-width: 90vw;
+    max-height: 85vh;
+    border-radius: 4px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  }
+  .lightbox-close {
+    position: absolute;
+    top: 24px; right: 28px;
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: transparent;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s;
+  }
+  .lightbox-close:hover { background: rgba(255,255,255,0.15); }
+  .lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(0,0,0,0.3);
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s;
+  }
+  .lightbox-nav:hover { background: rgba(255,255,255,0.15); }
+  .lightbox-prev { left: 28px; }
+  .lightbox-next { right: 28px; }
 
   /* ── AGENDAMENTO / CTA ── */
   .agendamento {
@@ -570,6 +798,103 @@
     transition: all 0.2s;
   }
   .btn-outline-white:hover { background: rgba(255,255,255,0.1); }
+
+  /* ── FORMULÁRIO DE AGENDAMENTO ── */
+  .agend-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    max-width: 1000px;
+    margin: 48px auto 0;
+    text-align: left;
+    align-items: start;
+  }
+  .agend-form {
+    background: var(--warm-white);
+    border-radius: 6px;
+    padding: 36px 32px;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.18);
+  }
+  .agend-form .form-row { margin-bottom: 18px; }
+  .agend-form label {
+    display: block;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  .agend-form input,
+  .agend-form select,
+  .agend-form textarea {
+    width: 100%;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.92rem;
+    color: var(--charcoal);
+    padding: 13px 14px;
+    border: 1px solid var(--light-line);
+    border-radius: 3px;
+    background: white;
+    transition: border-color 0.2s;
+  }
+  .agend-form input:focus,
+  .agend-form select:focus,
+  .agend-form textarea:focus {
+    outline: none;
+    border-color: var(--rose);
+  }
+  .agend-form textarea { resize: vertical; min-height: 80px; }
+  .agend-form .btn-submit {
+    width: 100%;
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    background: #25D366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 3px;
+    transition: background 0.2s;
+    margin-top: 6px;
+  }
+  .agend-form .btn-submit:hover { background: #1fb855; }
+  .agend-form .form-hint {
+    font-size: 0.72rem;
+    color: var(--mid);
+    margin-top: 14px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .agend-side { color: white; padding-top: 8px; }
+  .agend-side h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+  .agend-contact {
+    display: flex; align-items: center; gap: 14px;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    text-decoration: none;
+    color: white;
+    transition: opacity 0.2s;
+  }
+  .agend-contact:hover { opacity: 0.8; }
+  .agend-contact .ac-icon {
+    width: 42px; height: 42px; flex-shrink: 0;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem;
+  }
+  .agend-contact .ac-text strong { display: block; font-size: 0.95rem; margin-bottom: 2px; }
+  .agend-contact .ac-text span { font-size: 0.78rem; color: rgba(255,255,255,0.55); }
 
   /* ── FOOTER ── */
   footer {
@@ -741,6 +1066,58 @@
     box-shadow: 0 4px 20px rgba(37,211,102,0.4);
   }
 
+  /* ── BANNER DE CONSENTIMENTO (LGPD) ── */
+  .cookie-banner {
+    position: fixed;
+    bottom: 20px; left: 20px; right: 20px;
+    max-width: 760px;
+    margin: 0 auto;
+    background: var(--warm-white);
+    border: 1px solid var(--light-line);
+    border-radius: 8px;
+    box-shadow: 0 16px 48px rgba(74,16,32,0.22);
+    padding: 22px 26px;
+    z-index: 1200;
+    display: none;
+    grid-template-columns: 1fr auto;
+    gap: 22px;
+    align-items: center;
+  }
+  .cookie-banner.show { display: grid; }
+  .cookie-banner p {
+    font-size: 0.84rem;
+    color: var(--mid);
+    line-height: 1.6;
+  }
+  .cookie-banner p strong { color: var(--vinho-deep); }
+  .cookie-banner a { color: var(--vinho); text-decoration: underline; }
+  .cookie-actions { display: flex; gap: 10px; flex-shrink: 0; }
+  .cookie-btn {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    padding: 11px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid var(--light-line);
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .cookie-btn.decline { background: white; color: var(--mid); }
+  .cookie-btn.decline:hover { border-color: var(--rose); color: var(--vinho); }
+  .cookie-btn.accept { background: var(--vinho); color: white; border-color: var(--vinho); }
+  .cookie-btn.accept:hover { background: var(--vinho-deep); }
+  @media (max-width: 600px) {
+    .cookie-banner {
+      grid-template-columns: 1fr;
+      gap: 16px;
+      padding: 20px;
+      bottom: 12px; left: 12px; right: 12px;
+    }
+    .cookie-actions { width: 100%; }
+    .cookie-btn { flex: 1; text-align: center; }
+  }
+
   /* ════════════════════════════════
      TABLET  ≤ 1024px
   ════════════════════════════════ */
@@ -863,6 +1240,20 @@
     }
     .unidade-card { padding: 28px 24px; }
 
+    /* GALLERY MODAL */
+    .gallery-head { padding: 20px 20px; }
+    .gallery-head h3 { font-size: 1.3rem; }
+    .gallery-grid {
+      grid-template-columns: 1fr;
+      padding: 16px 20px 24px;
+    }
+    .gallery-grid img { height: 220px; }
+    .lightbox { padding: 20px; }
+    .lightbox-nav { width: 40px; height: 40px; }
+    .lightbox-prev { left: 12px; }
+    .lightbox-next { right: 12px; }
+    .lightbox-close { top: 14px; right: 16px; }
+
     /* AGENDAMENTO */
     .agendamento { padding: 60px 20px; }
     .cta-group {
@@ -874,6 +1265,12 @@
       justify-content: center;
       padding: 16px 24px;
     }
+    .agend-grid {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+    .agend-form { padding: 28px 22px; }
+    .agend-side { padding-top: 0; }
 
     /* FOOTER */
     footer { padding: 48px 20px 32px; }
@@ -949,12 +1346,7 @@
   <div class="hero-right">
     <div class="hero-right-bg"></div>
     <div class="hero-placeholder">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-        <rect x="3" y="3" width="18" height="18" rx="2"/>
-        <circle cx="8.5" cy="8.5" r="1.5"/>
-        <path d="m21 15-5-5L5 21"/>
-      </svg>
-      <p>Foto da clínica</p>
+      <img src="img/dra_manuella.jpeg" alt="Odontologia Muniz" width="798" height="1200" fetchpriority="high" decoding="async" />
     </div>
     <div class="hero-stats">
       <div class="stat">
@@ -977,24 +1369,10 @@
 <section class="sobre" id="sobre">
   <div class="sobre-visual">
     <div class="img-block img1">
-      <div class="img-block-inner">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <rect x="3" y="3" width="18" height="18" rx="2"/>
-          <circle cx="8.5" cy="8.5" r="1.5"/>
-          <path d="m21 15-5-5L5 21"/>
-        </svg>
-        <p style="font-size:0.72rem;color:#a88a8e;">Foto da equipe</p>
-      </div>
+      <img src="img/alto da lapa/2121B4FE-018F-4F5B-8E56-C152C36B1E60.jpeg" alt="Clínica Odontologia Muniz" loading="lazy" decoding="async" />
     </div>
     <div class="img-block img2">
-      <div class="img-block-inner">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <rect x="3" y="3" width="18" height="18" rx="2"/>
-          <circle cx="8.5" cy="8.5" r="1.5"/>
-          <path d="m21 15-5-5L5 21"/>
-        </svg>
-        <p style="font-size:0.72rem;color:#a88a8e;">Interior da clínica</p>
-      </div>
+      <img src="img/alto da lapa/4F4A3423-0D5E-4984-82C5-6033BBCAAA0D.jpeg" alt="Interior da clínica" loading="lazy" decoding="async" />
     </div>
     <div class="sobre-badge">
       <strong>5+</strong>
@@ -1102,11 +1480,7 @@
 <!-- PROFISSIONAL -->
 <section class="profissional" id="profissional">
   <div class="prof-photo">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-      <circle cx="12" cy="8" r="4"/>
-      <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
-    </svg>
-    <span style="color:var(--mid);font-size:0.75rem;">Foto da Dra. Manuella</span>
+    <img src="img/dra_manuella.jpeg" alt="Dra. Manuella Andrade" width="798" height="1200" loading="lazy" decoding="async" />
   </div>
   <div class="prof-info">
     <div class="section-label">Nossa equipe</div>
@@ -1131,37 +1505,43 @@
   </div>
   <div class="unidades-grid">
     <div class="unidade-card">
+      <img class="unidade-photo" src="img/sol nascente/23553CB2-6DEF-440F-B997-830D2826664D.jpeg" alt="Unidade Sol Nascente" data-gallery="sol-nascente" loading="lazy" decoding="async" />
       <div class="unidade-num">01</div>
       <h3>Sol Nascente</h3>
       <address>
         <strong>Endereço</strong>
         Estrada de Ligação, 129<br>Sol Nascente, São Paulo – SP
       </address>
-      <a href="#" class="unidade-link">
-        Ver no mapa →
-      </a>
+      <div class="unidade-actions">
+        <a href="https://maps.app.goo.gl/1phec6NK6k67Ctct7" class="unidade-link" target="_blank" rel="noopener">Ver no mapa →</a>
+        <button class="unidade-gallery-btn" data-gallery="sol-nascente">📷 Ver fotos</button>
+      </div>
     </div>
     <div class="unidade-card">
+      <img class="unidade-photo" src="img/vila clarice/46E7C5A7-836E-4DCC-82F5-BDEBD38B249A.jpeg" alt="Unidade Vila Clarice" data-gallery="vila-clarice" loading="lazy" decoding="async" />
       <div class="unidade-num">02</div>
       <h3>Vila Clarice</h3>
       <address>
         <strong>Endereço</strong>
         Av. Agenor Couto de Magalhães, 1602<br>Vila Clarice, São Paulo – SP
       </address>
-      <a href="#" class="unidade-link">
-        Ver no mapa →
-      </a>
+      <div class="unidade-actions">
+        <a href="https://maps.app.goo.gl/wt2nGVYHKecJHwcw9" class="unidade-link" target="_blank" rel="noopener">Ver no mapa →</a>
+        <button class="unidade-gallery-btn" data-gallery="vila-clarice">📷 Ver fotos</button>
+      </div>
     </div>
     <div class="unidade-card">
+      <img class="unidade-photo" src="img/alto da lapa/53395199-B052-473C-A4D1-5F9E49032FC9.jpeg" alt="Unidade Alto da Lapa" data-gallery="alto-da-lapa" loading="lazy" decoding="async" />
       <div class="unidade-num">03</div>
       <h3>Alto da Lapa</h3>
       <address>
         <strong>Endereço</strong>
         Av. Diógenes Ribeiro de Lima, 3187<br>Alto da Lapa, São Paulo – SP
       </address>
-      <a href="#" class="unidade-link">
-        Ver no mapa →
-      </a>
+      <div class="unidade-actions">
+        <a href="https://maps.app.goo.gl/ozTfzdUWMJNrKJey6" class="unidade-link" target="_blank" rel="noopener">Ver no mapa →</a>
+        <button class="unidade-gallery-btn" data-gallery="alto-da-lapa">📷 Ver fotos</button>
+      </div>
     </div>
   </div>
 </section>
@@ -1170,14 +1550,53 @@
 <section class="agendamento" id="agendamento">
   <div class="section-label">Pronto para cuidar do seu sorriso?</div>
   <h2>Agende sua<br><em>consulta</em> hoje</h2>
-  <p>Entre em contato pelo WhatsApp ou siga nossas redes sociais para saber mais.</p>
-  <div class="cta-group">
-    <a href="https://wa.me/5511965018274" class="btn-white">
-      📱 WhatsApp
-    </a>
-    <a href="https://www.instagram.com/odontomuniiz" class="btn-outline-white">
-      Instagram @odontomuniiz
-    </a>
+  <p>Preencha os dados abaixo e fale com a gente agora mesmo pelo WhatsApp.</p>
+
+  <div class="agend-grid">
+    <!-- FORMULÁRIO -> abre o WhatsApp pré-preenchido -->
+    <form class="agend-form" id="leadForm">
+      <div class="form-row">
+        <label for="lf-nome">Nome completo</label>
+        <input type="text" id="lf-nome" name="nome" placeholder="Seu nome" required>
+      </div>
+      <div class="form-row">
+        <label for="lf-tel">WhatsApp / Telefone</label>
+        <input type="tel" id="lf-tel" name="telefone" placeholder="(11) 99999-9999" required>
+      </div>
+      <div class="form-row">
+        <label for="lf-unidade">Unidade de preferência</label>
+        <select id="lf-unidade" name="unidade" required>
+          <option value="" disabled selected>Selecione uma unidade</option>
+          <option value="Sol Nascente">Sol Nascente</option>
+          <option value="Vila Clarice">Vila Clarice</option>
+          <option value="Alto da Lapa">Alto da Lapa</option>
+          <option value="Qualquer unidade">Tanto faz / não sei</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="lf-msg">Como podemos ajudar? (opcional)</label>
+        <textarea id="lf-msg" name="mensagem" placeholder="Ex: gostaria de agendar uma avaliação"></textarea>
+      </div>
+      <button type="submit" class="btn-submit">📱 Enviar pelo WhatsApp</button>
+      <p class="form-hint">Ao enviar, abriremos o WhatsApp com sua mensagem já preenchida.</p>
+    </form>
+
+    <!-- CONTATOS DIRETOS -->
+    <div class="agend-side">
+      <h3>Prefere falar direto?</h3>
+      <a href="https://wa.me/5511965018274" class="agend-contact" id="waDirect" target="_blank" rel="noopener">
+        <div class="ac-icon">📱</div>
+        <div class="ac-text"><strong>WhatsApp</strong><span>(11) 96501-8274</span></div>
+      </a>
+      <a href="tel:+5511965018274" class="agend-contact" id="phoneDirect">
+        <div class="ac-icon">📞</div>
+        <div class="ac-text"><strong>Telefone</strong><span>(11) 96501-8274</span></div>
+      </a>
+      <a href="https://www.instagram.com/odontomuniiz" class="agend-contact" id="igDirect" target="_blank" rel="noopener">
+        <div class="ac-icon">📷</div>
+        <div class="ac-text"><strong>Instagram</strong><span>@odontomuniiz</span></div>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -1199,6 +1618,7 @@
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#profissional">Equipe</a></li>
         <li><a href="#unidades">Unidades</a></li>
+        <li><a href="privacidade.html">Política de Privacidade</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -1220,12 +1640,44 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 Odontologia Muniz. Todos os direitos reservados.</p>
-    <p>Desenvolvido com ♡</p>
+    <p>© 2026 Odontologia Muniz. Todos os direitos reservados. · <a href="privacidade.html" style="color:rgba(255,255,255,0.4);text-decoration:underline;">Política de Privacidade</a></p>
+    <p>Desenvolvido por <a href="https://jotajotasistemas.com.br/" target="_blank" rel="noopener nofollow" style="color:rgba(255,255,255,0.45);text-decoration:none;font-weight:500;">&lt;/Jota.J&gt;</a></p>
   </div>
 </footer>
 
-<div class="proto-label">Protótipo Visual</div>
+<!-- BANNER DE CONSENTIMENTO (LGPD) -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+  <p>
+    <strong>Usamos cookies.</strong> Utilizamos cookies para melhorar sua experiência e, com o seu consentimento,
+    para fins de análise e marketing (Google e Meta). Saiba mais na nossa
+    <a href="privacidade.html">Política de Privacidade</a>.
+  </p>
+  <div class="cookie-actions">
+    <button class="cookie-btn decline" id="cookieDecline">Recusar</button>
+    <button class="cookie-btn accept" id="cookieAccept">Aceitar</button>
+  </div>
+</div>
+
+<!-- GALLERY MODAL -->
+<div class="gallery-modal" id="galleryModal">
+  <div class="gallery-box">
+    <div class="gallery-head">
+      <h3 id="galleryTitle">Unidade<span>Galeria de fotos</span></h3>
+      <button class="gallery-close" id="galleryClose" aria-label="Fechar">✕</button>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">✕</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Anterior">‹</button>
+  <img id="lightboxImg" src="" alt="Foto da unidade" />
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Próxima">›</button>
+</div>
+
+
 
 <script>
   const hamburger = document.getElementById('hamburger');
@@ -1243,6 +1695,260 @@
       mobileMenu.classList.remove('open');
     });
   });
+
+  /* ── GALERIAS DAS UNIDADES ── */
+  const galleries = {
+    'sol-nascente': {
+      title: 'Sol Nascente',
+      photos: [
+        'img/sol nascente/23553CB2-6DEF-440F-B997-830D2826664D.jpeg',
+        'img/sol nascente/2CCE4EFF-C7DE-4574-AF75-DE9AEC3BD579.jpeg',
+        'img/sol nascente/673EFC5D-B069-4D68-864B-1E7A17D65307.jpeg',
+        'img/sol nascente/D9FC24AF-9FB9-4818-89C2-05167712B5CA.jpeg'
+      ]
+    },
+    'vila-clarice': {
+      title: 'Vila Clarice',
+      photos: [
+        'img/vila clarice/46E7C5A7-836E-4DCC-82F5-BDEBD38B249A.jpeg',
+        'img/vila clarice/BF963D32-D233-4D82-8D3B-279274C95866.jpeg',
+        'img/vila clarice/DA07FACC-96CD-4B1E-8E8F-7292E1B94424.jpeg'
+      ]
+    },
+    'alto-da-lapa': {
+      title: 'Alto da Lapa',
+      photos: [
+        'img/alto da lapa/2121B4FE-018F-4F5B-8E56-C152C36B1E60.jpeg',
+        'img/alto da lapa/4F4A3423-0D5E-4984-82C5-6033BBCAAA0D.jpeg',
+        'img/alto da lapa/53395199-B052-473C-A4D1-5F9E49032FC9.jpeg',
+        'img/alto da lapa/5F299966-928E-4DD4-8762-67187FAA79CA.jpeg'
+      ]
+    }
+  };
+
+  const galleryModal = document.getElementById('galleryModal');
+  const galleryGrid  = document.getElementById('galleryGrid');
+  const galleryTitle = document.getElementById('galleryTitle');
+  const galleryClose = document.getElementById('galleryClose');
+
+  const lightbox      = document.getElementById('lightbox');
+  const lightboxImg   = document.getElementById('lightboxImg');
+  const lightboxClose = document.getElementById('lightboxClose');
+  const lightboxPrev  = document.getElementById('lightboxPrev');
+  const lightboxNext  = document.getElementById('lightboxNext');
+
+  let currentPhotos = [];
+  let currentIndex = 0;
+
+  function openGallery(key) {
+    const data = galleries[key];
+    if (!data) return;
+    currentPhotos = data.photos;
+    galleryTitle.innerHTML = data.title + '<span>' + data.photos.length + ' fotos · Galeria da unidade</span>';
+    galleryGrid.innerHTML = '';
+    data.photos.forEach((src, i) => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = data.title + ' – foto ' + (i + 1);
+      img.loading = 'lazy';
+      img.addEventListener('click', () => openLightbox(i));
+      galleryGrid.appendChild(img);
+    });
+    galleryModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeGallery() {
+    galleryModal.classList.remove('open');
+    if (!lightbox.classList.contains('open')) {
+      document.body.style.overflow = '';
+    }
+  }
+
+  function openLightbox(index) {
+    currentIndex = index;
+    lightboxImg.src = currentPhotos[currentIndex];
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    if (!galleryModal.classList.contains('open')) {
+      document.body.style.overflow = '';
+    }
+  }
+
+  function showPhoto(step) {
+    currentIndex = (currentIndex + step + currentPhotos.length) % currentPhotos.length;
+    lightboxImg.src = currentPhotos[currentIndex];
+  }
+
+  document.querySelectorAll('[data-gallery]').forEach(el => {
+    el.addEventListener('click', () => openGallery(el.getAttribute('data-gallery')));
+  });
+
+  galleryClose.addEventListener('click', closeGallery);
+  galleryModal.addEventListener('click', (e) => {
+    if (e.target === galleryModal) closeGallery();
+  });
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightboxPrev.addEventListener('click', () => showPhoto(-1));
+  lightboxNext.addEventListener('click', () => showPhoto(1));
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (lightbox.classList.contains('open')) {
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') showPhoto(-1);
+      if (e.key === 'ArrowRight') showPhoto(1);
+    } else if (galleryModal.classList.contains('open') && e.key === 'Escape') {
+      closeGallery();
+    }
+  });
+
+  /* ════════════════════════════════════════════
+     TRÁFEGO PAGO: UTMs, conversões e formulário
+     ════════════════════════════════════════════ */
+
+  const WHATSAPP_NUMBER = '5511965018274'; // número oficial (só dígitos, com DDI 55)
+
+  // 1) Captura os parâmetros de campanha (utm_*) da URL do anúncio
+  function getUTMs() {
+    const p = new URLSearchParams(window.location.search);
+    const keys = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','fbclid'];
+    const found = [];
+    keys.forEach(k => { const v = p.get(k); if (v) found.push(k + '=' + v); });
+    return found.join(' | ');
+  }
+  const utmString = getUTMs();
+
+  // 2) Dispara eventos de conversão nas tags (gtag + Meta Pixel).
+  //    Enquanto as tags estão comentadas, os fallbacks apenas enfileiram sem erro.
+  function trackConversion(eventName, extra) {
+    extra = extra || {};
+    try { window.gtag && gtag('event', eventName, extra); } catch (e) {}
+    try { window.fbq && fbq('trackCustom', eventName, extra); } catch (e) {}
+    try { window.dataLayer && dataLayer.push(Object.assign({ event: eventName }, extra)); } catch (e) {}
+  }
+
+  // 3) Rastreia os cliques nos contatos diretos
+  const waDirect = document.getElementById('waDirect');
+  const phoneDirect = document.getElementById('phoneDirect');
+  const igDirect = document.getElementById('igDirect');
+  if (waDirect)    waDirect.addEventListener('click',    () => trackConversion('contato_whatsapp',  { metodo: 'botao_direto' }));
+  if (phoneDirect) phoneDirect.addEventListener('click', () => trackConversion('contato_telefone',  { metodo: 'botao_direto' }));
+  if (igDirect)    igDirect.addEventListener('click',    () => trackConversion('contato_instagram', { metodo: 'botao_direto' }));
+
+  // também rastreia o botão flutuante e os CTAs de WhatsApp espalhados na página
+  document.querySelectorAll('a[href^="https://wa.me/"]').forEach(a => {
+    if (a.id === 'waDirect') return;
+    a.addEventListener('click', () => trackConversion('contato_whatsapp', { metodo: 'link_pagina' }));
+  });
+
+  // 4) Formulário: monta a mensagem e abre o WhatsApp pré-preenchido
+  const leadForm = document.getElementById('leadForm');
+  if (leadForm) {
+    leadForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const nome     = document.getElementById('lf-nome').value.trim();
+      const telefone = document.getElementById('lf-tel').value.trim();
+      const unidade  = document.getElementById('lf-unidade').value;
+      const mensagem = document.getElementById('lf-msg').value.trim();
+
+      let texto = 'Olá! Gostaria de agendar uma consulta na Odontologia Muniz.\n\n';
+      texto += '*Nome:* ' + nome + '\n';
+      texto += '*Telefone:* ' + telefone + '\n';
+      texto += '*Unidade:* ' + unidade + '\n';
+      if (mensagem) texto += '*Mensagem:* ' + mensagem + '\n';
+      if (utmString) texto += '\n_(origem: ' + utmString + ')_';
+
+      // conversão de lead (o evento mais importante para o tráfego pago)
+      trackConversion('lead_formulario', { unidade: unidade });
+
+      const url = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(texto);
+      window.open(url, '_blank');
+    });
+  }
+
+  /* ════════════════════════════════════════════
+     CONSENTIMENTO DE COOKIES (LGPD)
+     As tags de rastreamento só carregam APÓS o aceite.
+     Preencha os IDs abaixo quando criar as contas.
+     ════════════════════════════════════════════ */
+  const TRACKING_IDS = {
+    ga4:       '',  // ex: 'G-XXXXXXXXXX'
+    googleAds: '',  // ex: 'AW-XXXXXXXXX'
+    metaPixel: '',  // ex: '123456789012345'
+    gtm:       ''   // ex: 'GTM-XXXXXXX'  (se usar GTM, prefira ele e deixe os demais vazios)
+  };
+
+  let tagsLoaded = false;
+
+  // Injeta de fato as tags de Google e Meta — chamado só com consentimento.
+  function loadTrackingTags() {
+    if (tagsLoaded) return;
+    tagsLoaded = true;
+
+    // Google Tag Manager
+    if (TRACKING_IDS.gtm) {
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',TRACKING_IDS.gtm);
+    }
+
+    // Google Analytics 4 / Google Ads (gtag.js)
+    if (TRACKING_IDS.ga4 || TRACKING_IDS.googleAds) {
+      const firstId = TRACKING_IDS.ga4 || TRACKING_IDS.googleAds;
+      const s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + firstId;
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function(){ window.dataLayer.push(arguments); };
+      gtag('js', new Date());
+      if (TRACKING_IDS.ga4)       gtag('config', TRACKING_IDS.ga4);
+      if (TRACKING_IDS.googleAds)  gtag('config', TRACKING_IDS.googleAds);
+    }
+
+    // Meta Pixel
+    if (TRACKING_IDS.metaPixel) {
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', TRACKING_IDS.metaPixel);
+      fbq('track', 'PageView');
+    }
+  }
+
+  const cookieBanner  = document.getElementById('cookieBanner');
+  const cookieAccept  = document.getElementById('cookieAccept');
+  const cookieDecline = document.getElementById('cookieDecline');
+  const CONSENT_KEY   = 'om_cookie_consent';
+
+  function applyConsent(value) {
+    try { localStorage.setItem(CONSENT_KEY, value); } catch (e) {}
+    cookieBanner.classList.remove('show');
+    if (value === 'accepted') loadTrackingTags();
+  }
+
+  // Mostra o banner só se ainda não houver decisão salva
+  let saved = null;
+  try { saved = localStorage.getItem(CONSENT_KEY); } catch (e) {}
+  if (saved === 'accepted') {
+    loadTrackingTags();            // já consentiu em visita anterior
+  } else if (saved !== 'declined') {
+    cookieBanner.classList.add('show');  // primeira visita
+  }
+
+  cookieAccept.addEventListener('click', () => applyConsent('accepted'));
+  cookieDecline.addEventListener('click', () => applyConsent('declined'));
 </script>
 </body>
 </html>

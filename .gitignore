@@ -1,0 +1,6 @@
+# Backup das imagens originais (não publicar)
+img_original/
+
+# Arquivos de sistema
+.DS_Store
+**/.DS_Store
