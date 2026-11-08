@@ -244,18 +244,31 @@
   }
   .hero-placeholder {
     position: absolute;
-    top: 60px; left: 50%;
-    transform: translateX(-50%);
-    width: 260px; height: 340px;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    max-width: 78%;
+    height: auto;
+    max-height: 72%;
     background: var(--light-line);
     border-radius: 4px;
     display: flex; align-items: center; justify-content: center;
     flex-direction: column; gap: 12px;
     color: var(--rose);
+    box-shadow: 0 20px 50px rgba(74,16,32,0.14);
   }
   .hero-placeholder svg { width: 40px; height: 40px; opacity: 0.4; }
   .hero-placeholder p { font-size: 0.75rem; color: var(--mid); opacity: 0.7; }
-  .hero-placeholder img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
+  /* desktop: imagem inteira, proporção natural, sem corte */
+  .hero-placeholder img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 72vh;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
+  }
 
   .hero-stats {
     position: relative; z-index: 2;
@@ -265,7 +278,7 @@
     border: 1px solid var(--light-line);
     border-radius: 4px;
     overflow: hidden;
-    margin-top: 380px;
+    margin-top: auto;
   }
   .stat {
     background: white;
@@ -1170,8 +1183,19 @@
       top: auto; left: auto;
       transform: none;
       width: 100%;
+      max-width: none;
       height: 200px;
+      max-height: none;
       margin-bottom: 20px;
+      box-shadow: none;
+    }
+    /* mobile: mantém comportamento anterior (preenche o bloco) */
+    .hero-placeholder img {
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      max-height: none;
+      object-fit: cover;
     }
     .hero-stats {
       margin-top: 0;
