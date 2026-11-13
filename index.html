@@ -1854,7 +1854,8 @@
   //    Enquanto as tags estão comentadas, os fallbacks apenas enfileiram sem erro.
   function trackConversion(eventName, extra) {
     extra = extra || {};
-    try { window.gtag && gtag('event', eventName, extra); } catch (e) {}
+    // gtag('event') só quando GA4/Ads são usados direto (sem GTM), para não duplicar no GTM
+    try { if (window.gtag && (TRACKING_IDS.ga4 || TRACKING_IDS.googleAds)) gtag('event', eventName, extra); } catch (e) {}
     try { window.fbq && fbq('trackCustom', eventName, extra); } catch (e) {}
     try { window.dataLayer && dataLayer.push(Object.assign({ event: eventName }, extra)); } catch (e) {}
   }
@@ -1907,7 +1908,7 @@
     ga4:       '',  // ex: 'G-XXXXXXXXXX'
     googleAds: '',  // ex: 'AW-XXXXXXXXX'
     metaPixel: '',  // ex: '123456789012345'
-    gtm:       ''   // ex: 'GTM-XXXXXXX'  (se usar GTM, prefira ele e deixe os demais vazios)
+    gtm:       'GTM-PR7C9RRF'  // GA4 e Google Ads são configurados dentro do GTM; deixe os demais vazios
   };
 
   let tagsLoaded = false;
